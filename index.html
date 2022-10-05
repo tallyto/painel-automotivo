@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Painel Automotivo</title>
+</head>
+
+<body>
+    <h2>Painel Automotivo</h2>
+    <button id="randomize">Valores Aleatórios</button>
+    <br><br>
+    <label for="speed">Velocidade</label>
+    <input type="number" id="speed" name="speed" min="0" max="1" step="0.005">
+    <label for="tacho">RPM</label>
+    <input type="number" id="tacho" name="tacho" min="0" max="1" step="0.005">
+    <label for="gas">Gasolina</label>
+    <input type="number" id="gas" name="gas" min="0" max="1" step="0.005">
+    <label for="mileage">Distancia</label>
+    <input type="number" id="mileage" name="mileage" min="0" step="0.005">
+    <h3>Setas</h3>
+    <label for="leftSign">Seta Esquerda</label>
+    <input type="checkbox" name="leftSign" id="leftSign" checked>
+    <label for="rightSign">Seta Direita</label>
+    <input type="checkbox" name="rightSign" id="rightSign" checked>
+    <h3>Mostrador principal</h3>
+    <label for="dippedBeam">Farol</label>
+    <input type="number" name="dippedBeam" id="dippedBeam" min="0" max="2" step="1" value="2">
+    <label for="brake">Freios</label>
+    <input type="number" name="brake" id="brake" min="0" max="2" step="1" value="2">
+    <label for="drift">Drift</label>
+    <input type="number" name="drift" id="drift" min="0" max="2" step="1" value="2">
+    <label for="highBeam">Luz Alta</label>
+    <input type="number" name="highBeam" id="highBeam" min="0" max="2" step="1" value="2">
+    <label for="lock">Lock</label>
+    <input type="number" name="lock" id="lock" min="0" max="2" step="1" value="2">
+    <label for="seatBelt">Cinto de Segurança</label>
+    <input type="number" name="seatBelt" id="seatBelt" min="0" max="2" step="1" value="2">
+    <label for="engineTemp">Engine Temp</label>
+    <input type="number" name="engineTemp" id="engineTemp" min="0" max="2" step="1" value="2">
+    <label for="stab">Estabilização</label>
+    <input type="number" name="stab" id="stab" min="0" max="2" step="1" value="2">
+    <label for="abs">ABS</label>
+    <input type="number" name="abs" id="abs" min="0" max="2" step="1" value="2">
+    <h3>Mostrador esquerdo</h3>
+    <label for="gasIcon">Gas</label>
+    <input type="number" name="gasIcon" id="gasIcon" min="0" max="3" step="1" value="2">
+    <label for="trunk">Trunk</label>
+    <input type="number" name="trunk" id="trunk" min="0" max="2" step="1" value="2">
+    <label for="bonnet">Bonnet</label>
+    <input type="number" name="bonnet" id="bonnet" min="0" max="2" step="1" value="2">
+    <label for="doors">Doors</label>
+    <input type="number" name="doors" id="doors" min="0" max="2" step="1" value="2">
+    <h3>Mostrador direito</h3>
+    <label for="battery">Battery</label>
+    <input type="number" name="battery" id="battery" min="0" max="3" step="1" value="2">
+    <label for="oil">Oil</label>
+    <input type="number" name="oil" id="oil" min="0" max="3" step="1" value="2">
+    <label for="engineFail">Engine Fail</label>
+    <input type="number" name="engineFail" id="engineFail" min="0" max="3" step="1" value="2">
+    <h3>Garagem</h3>
+
+    <button id="garageOpen">Abrir</button> <button id="garageClose">Fechar</button>
+
+    <h3>Lampada Garagem</h3>
+
+    <button id="acender">Acender</button> <button id="apagar">Apagar</button>
+
+    <div id="speedometer">
+        <div style="display: none;"><img id="sprite" src="assets/icons.svg"></div>
+        <canvas id="canvas" width="450" height="220"></canvas>
+    </div>
+    <script src="js/fraction.min.js"></script>
+    <script src="js/speedometer.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
